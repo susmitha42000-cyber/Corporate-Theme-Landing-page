@@ -1638,6 +1638,18 @@ section {
     text-align: center;
   }
 
+  .footer-brand,
+  .footer-logo,
+  .footer-address,
+  .footer-socials {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
+
   .footer-links ul {
     align-items: center;
   }
