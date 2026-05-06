@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stackly — Corporate Solutions</title>
+  <meta name="description" content="Stackly Corporate Solutions helps growing businesses with strategy, digital transformation, cybersecurity, cloud operations, and hands-on consulting support."/>
+  <meta name="theme-color" content="#0b0b12"/>
+  <title>Stackly - Corporate Solutions</title>
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -13,7 +15,7 @@
 <div id="splash">
   <div class="splash-inner">
     <div class="splash-logo">
-      <span class="splash-s">S</span><span class="splash-text">tackly</span>
+      <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-splash"/>
     </div>
     <div class="splash-ring" aria-hidden="true"></div>
     <div class="splash-bar"><div class="splash-fill"></div></div>
@@ -26,11 +28,9 @@
   <header id="header">
     <div class="header-inner">
       <div class="logo" id="headerLogo">
-        <span class="logo-mark">S</span>
-        <span class="logo-name">tackly</span>
-    
+        <img src="./Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-header"/>
       </div>
-      <nav id="mainNav">
+      <nav id="mainNav" aria-label="Primary navigation">
         <a href="#" class="nav-link" data-section="home">Home</a>
         <a href="#" class="nav-link" data-section="about">About</a>
         <a href="#" class="nav-link" data-section="services">Services</a>
@@ -41,12 +41,12 @@
         <button class="btn-login" id="headerLoginBtn">Login</button>
         <button class="btn-signup" id="headerSignupBtn">Get Started</button>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-controls="mobileNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
 
-    <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
       <a href="#" class="nav-link" data-section="home">Home</a>
       <a href="#" class="nav-link" data-section="about">About</a>
       <a href="#" class="nav-link" data-section="services">Services</a>
@@ -64,8 +64,8 @@
     <section class="hero" id="section-home">
       <div class="hero-bg">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" type="image/webp"/>
-          <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Corporate Building" class="hero-img"/>
+          <source srcset="./Assets/corporate-hero-image.webp" type="image/webp"/>
+          <img src="./Assets/corporate-hero-image.webp" alt="Modern corporate headquarters exterior" class="hero-img" fetchpriority="high"/>
         </picture>
         <div class="hero-overlay"></div>
       </div>
@@ -74,7 +74,7 @@
         <h1 class="hero-title">Transforming <em>Business</em><br/>Through Innovation</h1>
         <p class="hero-sub">We deliver cutting-edge corporate solutions that drive growth, efficiency, and lasting impact for enterprises worldwide.</p>
         <div class="hero-cta">
-          <button class="btn-primary hero-btn" data-404>Explore Solutions</button>
+          <button class="btn-primary hero-btn" data-scroll="services">Explore Solutions</button>
           <button class="btn-ghost hero-btn" data-scroll="about">Learn More</button>
         </div>
         <div class="hero-stats">
@@ -96,8 +96,8 @@
         <div class="about-grid">
           <div class="about-image-wrap">
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&fm=webp&q=80" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Team Collaboration" class="about-img"/>
+              <source srcset="Assets/Corporate-about-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-about-img.webp" alt="Stackly team collaborating in a strategy workshop" class="about-img" loading="lazy" decoding="async"/>
             </picture>
             <div class="about-badge">
               <span class="badge-num">12+</span>
@@ -107,15 +107,15 @@
           <div class="about-content">
             <p class="section-eyebrow">About Stackly</p>
             <h2 class="section-title">We Build the Backbone of Modern Corporations</h2>
-            <p class="about-desc">Stackly Corporate Solutions was founded with a singular vision — to empower businesses with tools, strategies, and expertise that make them unstoppable. From digital transformation to enterprise consulting, we stand beside our clients at every stage.</p>
-            <p class="about-desc">Headquartered in Bangalore, karnataka and our team of specialists brings global perspective with local insight.</p>
+            <p class="about-desc">Stackly Corporate Solutions was founded with a singular vision - to empower businesses with tools, strategies, and expertise that make them unstoppable. From digital transformation to enterprise consulting, we stand beside our clients at every stage.</p>
+            <p class="about-desc">Headquartered in Bangalore, Karnataka, our team of specialists brings global perspective with local insight.</p>
             <div class="about-features">
               <div class="feature-item"><i class="fa fa-check-circle"></i> Strategic Consulting</div>
               <div class="feature-item"><i class="fa fa-check-circle"></i> Digital Transformation</div>
               <div class="feature-item"><i class="fa fa-check-circle"></i> Enterprise Integration</div>
               <div class="feature-item"><i class="fa fa-check-circle"></i> 24/7 Support</div>
             </div>
-            <button class="btn-primary" data-404>Our Story</button>
+            <button class="btn-primary" data-scroll="team">Our Story</button>
           </div>
         </div>
       </div>
@@ -131,66 +131,66 @@
           <div class="service-card">
             <div class="service-icon"><i class="fa fa-chart-line"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75" alt="Business Strategy" class="service-img"/>
+              <source srcset="Assets/Corporate-service1-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service1-img.webp" alt="Business strategy planning session" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>Business Strategy</h3>
             <p>Data-driven strategic planning to align your organization's goals with market opportunities.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
           <div class="service-card featured">
             <div class="service-icon"><i class="fa fa-microchip"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=75" alt="Digital Transformation" class="service-img"/>
+              <source srcset="Assets/Corporate-service2-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service2-img.webp" alt="Digital transformation dashboard and analytics" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>Digital Transformation</h3>
             <p>End-to-end digitization services that modernize your workflows and maximize efficiency.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
           <div class="service-card">
             <div class="service-icon"><i class="fa fa-shield-alt"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=600&q=75" alt="Cybersecurity" class="service-img"/>
+              <source srcset="Assets/Corporate-service3-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service3-img.webp" alt="Cybersecurity monitoring interface" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>Cybersecurity</h3>
             <p>Enterprise-grade security solutions that protect your data, systems, and reputation.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
           <div class="service-card">
             <div class="service-icon"><i class="fa fa-users-cog"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=75" alt="HR Solutions" class="service-img"/>
+              <source srcset="Assets/Corporate-service4-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service4-img.webp" alt="Human resources planning and collaboration" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>HR Solutions</h3>
             <p>Comprehensive human resource management to build and retain top-tier talent.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
           <div class="service-card">
             <div class="service-icon"><i class="fa fa-cloud"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=75" alt="Cloud Solutions" class="service-img"/>
+              <source srcset="Assets/Corporate-service5-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service5-img.webp" alt="Cloud solutions infrastructure concept" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>Cloud Solutions</h3>
             <p>Scalable cloud infrastructure and migration services for future-ready operations.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
           <div class="service-card">
             <div class="service-icon"><i class="fa fa-handshake"></i></div>
             <picture>
-              <source srcset="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&fm=webp&q=75" type="image/webp"/>
-              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=75" alt="Consulting" class="service-img"/>
+              <source srcset="Assets/Corporate-service6-img.webp" type="image/webp"/>
+              <img src="Assets/Corporate-service6-img.webp" alt="Executive consulting meeting" class="service-img" loading="lazy" decoding="async"/>
             </picture>
             <h3>Management Consulting</h3>
             <p>Expert advisory services that help leadership teams make confident, informed decisions.</p>
-            <button class="btn-link" data-404>Learn More <i class="fa fa-arrow-right"></i></button>
+            <button class="btn-link" data-scroll="contact">Learn More <i class="fa fa-arrow-right"></i></button>
           </div>
         </div>
         <div class="services-cta">
-          <button class="btn-primary" data-404>View All Services</button>
+          <button class="btn-primary" data-scroll="contact">View All Services</button>
         </div>
       </div>
     </section>
@@ -216,62 +216,62 @@
           <div class="team-card">
             <div class="team-img-wrap">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="CEO" class="team-img"/>
+                <source srcset="Assets/Corporate-team1-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-team1-img.webp" alt="Portrait of Arjun Rathod, Chief Executive Officer" class="team-img" loading="lazy" decoding="async"/>
               </picture>
             </div>
             <h4>Arjun Rathod</h4>
             <p class="team-role">Chief Executive Officer</p>
             <div class="team-socials">
-              <a href="#" data-404><i class="fab fa-linkedin"></i></a>
-              <a href="#" data-404><i class="fab fa-twitter"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Arjun Rathod via LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Arjun Rathod via X"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
           <div class="team-card">
             <div class="team-img-wrap">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="CTO" class="team-img"/>
+                <source srcset="Assets/Corporate-team2-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-team2-img.webp" alt="Portrait of Priya Nair, Chief Technology Officer" class="team-img" loading="lazy" decoding="async"/>
               </picture>
             </div>
             <h4>Priya Nair</h4>
             <p class="team-role">Chief Technology Officer</p>
             <div class="team-socials">
-              <a href="#" data-404><i class="fab fa-linkedin"></i></a>
-              <a href="#" data-404><i class="fab fa-twitter"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Priya Nair via LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Priya Nair via X"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
           <div class="team-card">
             <div class="team-img-wrap">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="CFO" class="team-img"/>
+                <source srcset="Assets/Corporate-team3-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-team3-img.webp" alt="Portrait of Karthik Menon, Chief Financial Officer" class="team-img" loading="lazy" decoding="async"/>
               </picture>
             </div>
             <h4>Karthik Menon</h4>
             <p class="team-role">Chief Financial Officer</p>
             <div class="team-socials">
-              <a href="#" data-404><i class="fab fa-linkedin"></i></a>
-              <a href="#" data-404><i class="fab fa-twitter"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Karthik Menon via LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Karthik Menon via X"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
           <div class="team-card">
             <div class="team-img-wrap">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="COO" class="team-img"/>
+                <source srcset="Assets/Corporate-team4-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-team4-img.webp" alt="Portrait of Divya Krishnan, Chief Operating Officer" class="team-img" loading="lazy" decoding="async"/>
               </picture>
             </div>
             <h4>Divya Krishnan</h4>
             <p class="team-role">Chief Operating Officer</p>
             <div class="team-socials">
-              <a href="#" data-404><i class="fab fa-linkedin"></i></a>
-              <a href="#" data-404><i class="fab fa-twitter"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Divya Krishnan via LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#contact" data-scroll="contact" aria-label="Contact Divya Krishnan via X"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
         </div>
         <div class="team-cta">
-          <button class="btn-primary" data-404>Meet Full Team</button>
+          <button class="btn-primary" data-scroll="contact">Meet Full Team</button>
         </div>
       </div>
     </section>
@@ -288,8 +288,8 @@
             <p>"Stackly transformed our entire IT infrastructure within months. The results exceeded every expectation we had going in."</p>
             <div class="testimonial-author">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Client"/>
+                <source srcset="Assets/Corporate-client1-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-client1-img.webp" alt="Portrait of client Rahul Sharma" loading="lazy" decoding="async"/>
               </picture>
               <div><strong>Rahul Sharma</strong><span>MD, TechVision India</span></div>
             </div>
@@ -299,8 +299,8 @@
             <p>"Their consulting team identified inefficiencies we didn't even know existed. Revenue grew 40% in the first year alone."</p>
             <div class="testimonial-author">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Client"/>
+                <source srcset="Assets/Corporate-client2-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-client2-img.webp" alt="Portrait of client Ananya Iyer" loading="lazy" decoding="async"/>
               </picture>
               <div><strong>Ananya Iyer</strong><span>CEO, Meridian Corp</span></div>
             </div>
@@ -310,8 +310,8 @@
             <p>"Professional, responsive, and genuinely invested in our success. Stackly is the partner every business deserves."</p>
             <div class="testimonial-author">
               <picture>
-                <source srcset="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&fm=webp&q=80" type="image/webp"/>
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Client"/>
+                <source srcset="Assets/Corporate-client3-img.webp" type="image/webp"/>
+                <img src="Assets/Corporate-client3-img.webp" alt="Portrait of client Vikram Patel" loading="lazy" decoding="async"/>
               </picture>
               <div><strong>Vikram Patel</strong><span>Director, Nexus Enterprises</span></div>
             </div>
@@ -334,14 +334,14 @@
             </div>
           </div>
           <div class="contact-form-wrap">
-            <form class="contact-form" onsubmit="return false;">
+            <form id="contactForm" class="contact-form">
               <div class="form-row">
-                <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name"/></div>
-                <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"/></div>
+                <div class="form-group"><label for="contactName">Full Name</label><input id="contactName" name="contactName" type="text" placeholder="Your name" minlength="2" autocomplete="name" required/></div>
+                <div class="form-group"><label for="contactEmail">Email</label><input id="contactEmail" name="contactEmail" type="email" placeholder="your@email.com" autocomplete="email" required/></div>
               </div>
-              <div class="form-group"><label>Subject</label><input type="text" placeholder="How can we help?"/></div>
-              <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Tell us about your project..."></textarea></div>
-              <button type="button" class="btn-primary full-w" data-404>Send Message</button>
+              <div class="form-group"><label for="contactSubject">Subject</label><input id="contactSubject" name="contactSubject" type="text" placeholder="How can we help?" minlength="3" required/></div>
+              <div class="form-group"><label for="contactMessage">Message</label><textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Tell us about your project..." minlength="20" required></textarea></div>
+              <button type="submit" id="contactSubmit" class="btn-primary full-w">Send Message</button>
             </form>
           </div>
         </div>
@@ -349,13 +349,14 @@
     </section>
 
   </div>
+
   <div id="page-404" class="page">
     <div class="not-found-wrap">
       <div class="nf-content">
         <div class="nf-code">404</div>
         <div class="nf-line"></div>
         <h2>Page Not Found</h2>
-        <p>That link doesn’t exist here. It may have been moved, renamed, or is temporarily unavailable.</p>
+        <p>That link doesn't exist here. It may have been moved, renamed, or is temporarily unavailable.</p>
         <div class="nf-btn-group">
           <button class="btn-ghost nf-back-btn" id="goBackBtn"><i class="fa fa-arrow-left"></i> Go Back</button>
           <button class="btn-primary" id="backHomeBtn"><i class="fa fa-house"></i> Back to Home</button>
@@ -363,8 +364,8 @@
       </div>
       <div class="nf-visual">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=700&fm=webp&q=80" type="image/webp"/>
-          <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=700&q=80" alt="404"/>
+          <source srcset="Assets/Corporate-404-page-img.webp" type="image/webp"/>
+          <img src="Assets/Corporate-404-page-img.webp" alt="Illustration for a missing page" loading="lazy" decoding="async"/>
         </picture>
       </div>
     </div>
@@ -374,12 +375,12 @@
     <div class="auth-page">
       <div class="auth-visual">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&fm=webp&q=80" type="image/webp"/>
-          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80" alt="Office"/>
+          <source srcset="Assets/Corporate-login-img.webp" type="image/webp"/>
+          <img src="Assets/Corporate-login-img.webp" alt="Stackly office workspace" loading="lazy" decoding="async"/>
         </picture>
         <div class="auth-visual-overlay">
           <div class="auth-logo">
-            <span class="logo-mark">S</span><span class="logo-name">tackly</span>
+            <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-auth"/>
           </div>
           <p class="auth-tagline">"Empowering businesses to reach their fullest potential through strategy and innovation."</p>
         </div>
@@ -392,23 +393,23 @@
             <button class="role-tab active" data-role="user" id="loginUserTab"><i class="fa fa-user"></i> User</button>
             <button class="role-tab" data-role="admin" id="loginAdminTab"><i class="fa fa-user-shield"></i> Admin</button>
           </div>
-          <form onsubmit="return false;" class="auth-form">
+          <form id="loginForm" class="auth-form">
             <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="you@example.com" id="loginEmail"/>
+              <label for="loginEmail">Email Address</label>
+              <input type="email" placeholder="you@example.com" id="loginEmail" autocomplete="email" required/>
             </div>
             <div class="form-group">
-              <label>Password</label>
+              <label for="loginPass">Password</label>
               <div class="input-wrap">
-                <input type="password" placeholder="Your password" id="loginPass"/>
-                <button type="button" class="eye-btn" onclick="togglePass('loginPass',this)"><i class="fa fa-eye"></i></button>
+                <input type="password" placeholder="Your password" id="loginPass" autocomplete="current-password" minlength="8" required/>
+                <button type="button" class="eye-btn" onclick="togglePass('loginPass',this)" aria-label="Show or hide password"><i class="fa fa-eye"></i></button>
               </div>
             </div>
             <div class="form-check">
               <label><input type="checkbox"/> Remember me</label>
-              <a href="#" data-404 class="forgot-link">Forgot password?</a>
+              <a href="#contact" data-scroll="contact" class="forgot-link">Forgot password?</a>
             </div>
-            <button type="button" class="btn-primary full-w" id="loginSubmit">Sign In</button>
+            <button type="submit" class="btn-primary full-w" id="loginSubmit">Sign In</button>
           </form>
           <p class="auth-switch">Don't have an account? <a href="#" id="goSignup">Create one</a></p>
         </div>
@@ -416,17 +417,16 @@
     </div>
   </div>
 
-
   <div id="page-signup" class="page">
     <div class="auth-page">
       <div class="auth-visual">
         <picture>
-          <source srcset="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&fm=webp&q=80" type="image/webp"/>
-          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80" alt="Office"/>
+          <source srcset="Assets/Corporate-signup-page-img.webp" type="image/webp"/>
+          <img src="Assets/Corporate-signup-page-img.webp" alt="Team preparing a corporate growth plan" loading="lazy" decoding="async"/>
         </picture>
         <div class="auth-visual-overlay">
           <div class="auth-logo">
-            <span class="logo-mark">S</span><span class="logo-name">tackly</span>
+            <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-auth"/>
           </div>
           <p class="auth-tagline">"Join hundreds of businesses that trust Stackly to power their corporate journey."</p>
         </div>
@@ -439,30 +439,30 @@
             <button class="role-tab active" data-role="user" id="signupUserTab"><i class="fa fa-user"></i> User</button>
             <button class="role-tab" data-role="admin" id="signupAdminTab"><i class="fa fa-user-shield"></i> Admin</button>
           </div>
-          <form onsubmit="return false;" class="auth-form">
+          <form id="signupForm" class="auth-form">
             <div class="form-row">
-              <div class="form-group"><label>First Name</label><input type="text" placeholder="John"/></div>
-              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe"/></div>
+              <div class="form-group"><label for="signupFirstName">First Name</label><input id="signupFirstName" name="signupFirstName" type="text" placeholder="John" autocomplete="given-name" minlength="2" required/></div>
+              <div class="form-group"><label for="signupLastName">Last Name</label><input id="signupLastName" name="signupLastName" type="text" placeholder="Doe" autocomplete="family-name" minlength="2" required/></div>
             </div>
             <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" placeholder="you@example.com" id="signupEmail"/>
+              <label for="signupEmail">Email Address</label>
+              <input type="email" placeholder="you@example.com" id="signupEmail" autocomplete="email" required/>
             </div>
             <div class="form-group">
-              <label>Password</label>
+              <label for="signupPass">Password</label>
               <div class="input-wrap">
-                <input type="password" placeholder="Create a password" id="signupPass"/>
-                <button type="button" class="eye-btn" onclick="togglePass('signupPass',this)"><i class="fa fa-eye"></i></button>
+                <input type="password" placeholder="Create a password" id="signupPass" autocomplete="new-password" minlength="8" required/>
+                <button type="button" class="eye-btn" onclick="togglePass('signupPass',this)" aria-label="Show or hide password"><i class="fa fa-eye"></i></button>
               </div>
             </div>
             <div class="form-group">
-              <label>Company Name</label>
-              <input type="text" placeholder="Your company"/>
+              <label for="signupCompany">Company Name</label>
+              <input id="signupCompany" name="signupCompany" type="text" placeholder="Your company" autocomplete="organization" minlength="2" required/>
             </div>
             <div class="form-check">
-              <label><input type="checkbox"/> I agree to the <a href="#" data-404>Terms & Conditions</a></label>
+              <label><input id="signupTerms" type="checkbox" required/> I agree to the <a href="#contact" data-scroll="contact">Terms & Conditions</a></label>
             </div>
-            <button type="button" class="btn-primary full-w" id="signupSubmit">Create Account</button>
+            <button type="submit" class="btn-primary full-w" id="signupSubmit">Create Account</button>
           </form>
           <p class="auth-switch">Already have an account? <a href="#" id="goLogin">Sign in</a></p>
         </div>
@@ -470,59 +470,58 @@
     </div>
   </div>
 
-
   <footer id="mainFooter">
     <div class="footer-inner">
       <div class="footer-brand">
         <div class="footer-logo" id="footerLogo">
-          <span class="logo-mark">S</span><span class="logo-name">tackly</span>
+          <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-footer"/>
         </div>
-        <p class="footer-desc">Empowering enterprises with innovative corporate solutions since 2013. Headquartered At Bangalore Branch.</p>
+        <p class="footer-desc">Empowering enterprises with innovative corporate solutions since 2013. Headquartered at Bangalore Branch.</p>
         <div class="footer-address">
           <i class="fa fa-map-marker-alt"></i>
-          <span>Begur Road, Bangalore,  India</span>
+          <span>Begur Road, Bangalore, India</span>
         </div>
         <div class="footer-socials">
-          <a href="#" class="social-icon" data-404 aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" data-404 aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-icon" data-404 aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-icon" data-404 aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon" data-404 aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#contact" class="social-icon" data-scroll="contact" aria-label="Contact Stackly on Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#contact" class="social-icon" data-scroll="contact" aria-label="Contact Stackly on X"><i class="fab fa-twitter"></i></a>
+          <a href="#contact" class="social-icon" data-scroll="contact" aria-label="Contact Stackly on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#contact" class="social-icon" data-scroll="contact" aria-label="Contact Stackly on Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#contact" class="social-icon" data-scroll="contact" aria-label="Contact Stackly on YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home" data-scroll="home">Home</a></li>
+          <li><a href="#about" data-scroll="about">About</a></li>
+          <li><a href="#services" data-scroll="services">Services</a></li>
+          <li><a href="#team" data-scroll="team">Team</a></li>
+          <li><a href="#contact" data-scroll="contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Services</h4>
         <ul>
-          <li><a href="#" data-404>Business Strategy</a></li>
-          <li><a href="#" data-404>Digital Transformation</a></li>
-          <li><a href="#" data-404>Cybersecurity</a></li>
-          <li><a href="#" data-404>HR Solutions</a></li>
-          <li><a href="#" data-404>Cloud Solutions</a></li>
+          <li><a href="#contact" data-scroll="contact">Business Strategy</a></li>
+          <li><a href="#contact" data-scroll="contact">Digital Transformation</a></li>
+          <li><a href="#contact" data-scroll="contact">Cybersecurity</a></li>
+          <li><a href="#contact" data-scroll="contact">HR Solutions</a></li>
+          <li><a href="#contact" data-scroll="contact">Cloud Solutions</a></li>
         </ul>
       </div>
       <div class="footer-links">
         <h4>Company</h4>
         <ul>
-          <li><a href="#" data-404>Careers</a></li>
-          <li><a href="#" data-404>Press</a></li>
-          <li><a href="#" data-404>Privacy Policy</a></li>
-          <li><a href="#" data-404>Terms of Service</a></li>
-          <li><a href="#" data-404>Cookie Policy</a></li>
+          <li><a href="#contact" data-scroll="contact">Careers</a></li>
+          <li><a href="#contact" data-scroll="contact">Press</a></li>
+          <li><a href="#contact" data-scroll="contact">Privacy Policy</a></li>
+          <li><a href="#contact" data-scroll="contact">Terms of Service</a></li>
+          <li><a href="#contact" data-scroll="contact">Cookie Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Stackly Corporate. All rights reserved.</p>
+      <p>&copy; 2026 Stackly Corporate. All rights reserved.</p>
     </div>
   </footer>
 
