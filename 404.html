@@ -10,25 +10,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
-<body>
-  <header id="header">
-    <div class="header-inner">
-      <div class="logo">
-        <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-header" />
-      </div>
-      <nav id="mainNav" aria-label="Primary navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#section-about" class="nav-link">About</a>
-        <a href="index.html#section-services" class="nav-link">Services</a>
-        <a href="index.html#section-team" class="nav-link">Team</a>
-        <a href="index.html#section-contact" class="nav-link">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <a href="index.html#page-login" class="btn-login btn-link">Login</a>
-        <a href="index.html#page-signup" class="btn-signup btn-primary">Get Started</a>
-      </div>
+<body class="not-found-body">
+  <button class="hamburger not-found-mobile-toggle" id="hamburger" aria-label="Toggle navigation menu" aria-controls="mobileNav" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mobile-nav not-found-mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="index.html#section-about" class="nav-link">About</a>
+    <a href="index.html#section-services" class="nav-link">Services</a>
+    <a href="index.html#section-team" class="nav-link">Team</a>
+    <a href="index.html#section-contact" class="nav-link">Contact</a>
+    <div class="mobile-actions">
+      <a href="index.html#page-login" class="btn-login">Login</a>
+      <a href="index.html#page-signup" class="btn-signup btn-primary">Get Started</a>
     </div>
-  </header>
+  </div>
 
   <main class="not-found-wrap">
     <div class="nf-content">
@@ -48,5 +45,27 @@
       </picture>
     </div>
   </main>
+
+  <script>
+    (() => {
+      const btn = document.getElementById("hamburger");
+      const nav = document.getElementById("mobileNav");
+      if (!btn || !nav) return;
+
+      btn.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("open");
+        btn.classList.toggle("active", isOpen);
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          nav.classList.remove("open");
+          btn.classList.remove("active");
+          btn.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
