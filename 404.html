@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stackly Corporate Solutions - Page not found." />
+  <meta name="theme-color" content="#0b0b12" />
+  <title>404 - Page Not Found | Stackly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <img src="Assets/Logo.webp" alt="Stackly logo" class="brand-logo brand-logo-header" />
+      </div>
+      <nav id="mainNav" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#section-about" class="nav-link">About</a>
+        <a href="index.html#section-services" class="nav-link">Services</a>
+        <a href="index.html#section-team" class="nav-link">Team</a>
+        <a href="index.html#section-contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="index.html#page-login" class="btn-login btn-link">Login</a>
+        <a href="index.html#page-signup" class="btn-signup btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="not-found-wrap">
+    <div class="nf-content">
+      <div class="nf-code">404</div>
+      <div class="nf-line"></div>
+      <h2>Page Not Found</h2>
+      <p>That link doesn't exist here. It may have been moved, renamed, or is temporarily unavailable.</p>
+      <div class="nf-btn-group">
+        <button class="btn-ghost nf-back-btn" onclick="history.back()"><i class="fa fa-arrow-left"></i> Go Back</button>
+        <a href="index.html" class="btn-primary"><i class="fa fa-house"></i> Back to Home</a>
+      </div>
+    </div>
+    <div class="nf-visual">
+      <picture>
+        <source srcset="Assets/Corporate-404-page-img.webp" type="image/webp" />
+        <img src="Assets/Corporate-404-page-img.webp" alt="Illustration for a missing page" loading="lazy" decoding="async" />
+      </picture>
+    </div>
+  </main>
+</body>
+</html>
